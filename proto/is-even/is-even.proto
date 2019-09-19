@@ -1,0 +1,21 @@
+syntax = "proto3";
+option go_package = "is-even";
+
+package iseven;
+
+service IsEven {
+    rpc IsEven(IsEvenRequest) returns (IsEvenResponse);
+}
+
+message IsEvenRequest {
+    int64 number = 1;
+}
+
+message IsEvenResponse {
+    enum Result {
+        RESULT_UNKNOWN = 0;
+        RESULT_EVEN = 1;
+        RESULT_NON_EVEN = 2;
+    };
+    Result result = 1;
+}
