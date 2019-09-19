@@ -6,7 +6,7 @@ A microservice to check whether a number is even.
 Dependencies
 ------------
 
-You will need to run [is-odd](github.com/q3k/is-odd).
+You will need to run [is-odd](https://github.com/q3k/is-odd).
 
 Running
 -------
